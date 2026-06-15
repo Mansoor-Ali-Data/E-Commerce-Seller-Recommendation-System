@@ -74,26 +74,10 @@ The pipeline addresses these issues through automated Data Quality (DQ) validati
 ## Architecture
 
 The project follows a layered Data Lake Architecture.
-```
-Company Sales
-               \
-                \
-Competitor Sales ---> Dirty Layer
-                /
-Seller Catalog /
-                     ↓
-                 Bronze
-                     ↓
-                  Silver
-                     ↓
-         Recommendation Engine
-                     ↓
-             Gold Hudi Tables
-                     ↓
-      Top 10 Seller Recommendations
+## Architecture
 
-### Dirty Layer
-```
+![Architecture Diagram](architecture.svg)
+
 Stores raw ingested files exactly as received from source systems.
 
 ### Bronze Layer
