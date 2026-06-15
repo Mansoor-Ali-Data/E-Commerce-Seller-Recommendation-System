@@ -76,7 +76,7 @@ The pipeline addresses these issues through automated Data Quality (DQ) validati
 The project follows a layered Data Lake Architecture.
 ## Architecture
 
-![Architecture Diagram](main/architecture.png)
+![Architecture Diagram](main/Architecture.png)
 
 Stores raw ingested files exactly as received from source systems.
 
