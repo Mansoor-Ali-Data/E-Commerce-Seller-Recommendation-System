@@ -1,0 +1,43 @@
+etl:
+  spark:
+    app_name: "Retail_Ingestion_ETL_2025EM1100209"
+    log_level: "WARN"
+
+paths:
+  # -------- RAW INPUT (clean + dirty) --------
+  raw_seller_catalog: "/home/cloud/Desktop/Documents/Assignment1/raw/seller_catalog"
+  dirty_seller_catalog: "/home/cloud/Desktop/Documents/Assignment1/dirty/seller_catalog"
+
+  raw_company_sales: "/home/cloud/Desktop/Documents/Assignment1/raw/company_sales"
+  dirty_company_sales: "/home/cloud/Desktop/Documents/Assignment1/dirty/company_sales"
+
+  raw_competitor_sales: "/home/cloud/Desktop/Documents/Assignment1/raw/competitor_sales"
+  dirty_competitor_sales: "/home/cloud/Desktop/Documents/Assignment1/dirty/competitor_sales"
+
+  # -------- PROCESSED ROOT --------
+  processed_root: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209"
+
+  # -------- BRONZE --------
+  bronze_seller_catalog: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/bronze/seller_catalog"
+  bronze_company_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/bronze/company_sales"
+  bronze_competitor_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/bronze/competitor_sales"
+
+  # -------- SILVER --------
+  silver_seller_catalog: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/silver/seller_catalog"
+  silver_company_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/silver/company_sales"
+  silver_competitor_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/silver/competitor_sales"
+
+  # -------- GOLD (HUDI) --------
+  gold_seller_catalog: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/seller_catalog_hudi"
+  gold_company_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/company_sales_hudi"
+  gold_competitor_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/competitor_sales_hudi"
+
+  # -------- QUARANTINE --------
+  quarantine_seller_catalog: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/quarantine/seller_catalog"
+  quarantine_company_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/quarantine/company_sales"
+  quarantine_competitor_sales: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/quarantine/competitor_sales"
+
+  # -------- FINAL OUTPUT --------
+  recommendations_csv: "/home/cloud/Desktop/Documents/Assignment1/processed/2025EM1100209/recommendations_csv"
+
+  
